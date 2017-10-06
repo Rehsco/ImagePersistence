@@ -20,7 +20,7 @@
 		5BDE66E61EA618BA009CF29A /* ImagePersistence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImagePersistence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDE66E91EA618BA009CF29A /* ImagePersistence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePersistence.h; sourceTree = "<group>"; };
 		5BDE66EA1EA618BA009CF29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5BDE66F61EA618F3009CF29A /* ImagePersistence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImagePersistence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDE66F61EA618F3009CF29A /* ImagePersistenceMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImagePersistenceMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDE66F81EA618F3009CF29A /* ImagePersistenceMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePersistenceMac.h; sourceTree = "<group>"; };
 		5BDE66F91EA618F3009CF29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BDE66FE1EA61960009CF29A /* ImagePersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePersistence.swift; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				5BDE66E61EA618BA009CF29A /* ImagePersistence.framework */,
-				5BDE66F61EA618F3009CF29A /* ImagePersistence.framework */,
+				5BDE66F61EA618F3009CF29A /* ImagePersistenceMac.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,7 +144,7 @@
 			);
 			name = ImagePersistenceMac;
 			productName = ImagePersistenceMac;
-			productReference = 5BDE66F61EA618F3009CF29A /* ImagePersistence.framework */;
+			productReference = 5BDE66F61EA618F3009CF29A /* ImagePersistenceMac.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -388,7 +388,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.ImagePersistenceMac;
-				PRODUCT_NAME = ImagePersistence;
+				PRODUCT_NAME = ImagePersistenceMac;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -414,7 +414,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.ImagePersistenceMac;
-				PRODUCT_NAME = ImagePersistence;
+				PRODUCT_NAME = ImagePersistenceMac;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
