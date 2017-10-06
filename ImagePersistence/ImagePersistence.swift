@@ -58,8 +58,8 @@ open class ImagePersistence {
         }
     }
     
-    open func filenameFromImageID(_ imageID: String) -> String {
-        return "com.rehsco.imagepersistence.\(imageID).png"
+    open func filenameFromImageID(_ imageID: String, suffix: String = "png") -> String {
+        return "com.rehsco.imagepersistence.\(imageID).\(suffix)"
     }
 
     open func imageAsJPEG(_ image: UIImage, quality: CGFloat) -> Data {
