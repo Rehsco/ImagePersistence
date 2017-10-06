@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ImagePersistence"
-  s.version          = "1.2.2"
+  s.version          = "1.2.3"
   s.license          = 'MIT'
   s.summary          = "Image Assets cache and storage"
   s.author           = { "Martin Jacob Rehder" => "rehscopods_01@rehsco.com" }
