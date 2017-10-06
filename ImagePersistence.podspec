@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ImagePersistence"
-  s.version          = "1.2.4"
+  s.version          = "1.2.5"
   s.license          = 'MIT'
   s.summary          = "Image Assets cache and storage"
   s.author           = { "Martin Jacob Rehder" => "rehscopods_01@rehsco.com" }
@@ -8,10 +8,10 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/Rehsco/ImagePersistence.git", :tag => s.version }
 
   s.ios.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/ImagePersistence"' }
-  s.ios.preserve_paths = 'ImagePersistence.framework'
+#  s.ios.preserve_paths = 'ImagePersistence.framework'
 
   s.osx.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/ImagePersistence-Mac"' }
-  s.osx.preserve_paths = 'ImagePersistence_Mac.framework'
+#  s.osx.preserve_paths = 'ImagePersistence_Mac.framework'
 
   s.ios.deployment_target = "10.0"
   s.osx.deployment_target = "10.12"
