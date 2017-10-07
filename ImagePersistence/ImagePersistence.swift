@@ -29,13 +29,12 @@
 
 import UIKit
 
-open class ImagePersistence {
-    
+open class ImagePersistence: ImagePersistenceInterface {
     private let fileManager = FileManager.default
     private let directoryURL: URL
     open static var storageID = "ipimages"
 
-    private let imageCache = ImageCache()
+    open var imageCache = ImageCache()
     
     public init?() {
         let possibleDirectories = fileManager.urls(for: .documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask)

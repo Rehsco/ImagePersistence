@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BD1E6E21F88B1C70027E663 /* ImagePersistenceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1E6DE1F88B08D0027E663 /* ImagePersistenceInterface.swift */; };
+		5BD1E6E41F88B1CA0027E663 /* ImagePersistenceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD1E6E31F88B1CA0027E663 /* ImagePersistenceInterface.swift */; };
 		5BD7C6AE1F87E1580073C8E0 /* ImagePersistence_Mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BD7C6AC1F87E1580073C8E0 /* ImagePersistence_Mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5BD7C6B21F87E1AC0073C8E0 /* NSImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE67061EA61A50009CF29A /* NSImageExtension.swift */; };
 		5BD7C6B31F87E1AC0073C8E0 /* ImagePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE67021EA61995009CF29A /* ImagePersistence.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5BD1E6DE1F88B08D0027E663 /* ImagePersistenceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePersistenceInterface.swift; sourceTree = "<group>"; };
+		5BD1E6E31F88B1CA0027E663 /* ImagePersistenceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePersistenceInterface.swift; sourceTree = "<group>"; };
 		5BD7C6AA1F87E1580073C8E0 /* ImagePersistence_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImagePersistence_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD7C6AC1F87E1580073C8E0 /* ImagePersistence_Mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePersistence_Mac.h; sourceTree = "<group>"; };
 		5BD7C6AD1F87E1580073C8E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				5BDE67061EA61A50009CF29A /* NSImageExtension.swift */,
+				5BD1E6E31F88B1CA0027E663 /* ImagePersistenceInterface.swift */,
 				5BDE67021EA61995009CF29A /* ImagePersistence.swift */,
 				5BDE67031EA61995009CF29A /* ImageCache.swift */,
 				5BD7C6AC1F87E1580073C8E0 /* ImagePersistence_Mac.h */,
@@ -81,6 +86,7 @@
 		5BDE66E81EA618BA009CF29A /* ImagePersistence */ = {
 			isa = PBXGroup;
 			children = (
+				5BD1E6DE1F88B08D0027E663 /* ImagePersistenceInterface.swift */,
 				5BDE66FE1EA61960009CF29A /* ImagePersistence.swift */,
 				5BDE66FF1EA61960009CF29A /* ImageCache.swift */,
 				5BDE66E91EA618BA009CF29A /* ImagePersistence.h */,
@@ -210,6 +216,7 @@
 				5BD7C6B41F87E1AC0073C8E0 /* ImageCache.swift in Sources */,
 				5BD7C6B21F87E1AC0073C8E0 /* NSImageExtension.swift in Sources */,
 				5BD7C6B31F87E1AC0073C8E0 /* ImagePersistence.swift in Sources */,
+				5BD1E6E41F88B1CA0027E663 /* ImagePersistenceInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BDE67011EA61960009CF29A /* ImageCache.swift in Sources */,
+				5BD1E6E21F88B1C70027E663 /* ImagePersistenceInterface.swift in Sources */,
 				5BDE67001EA61960009CF29A /* ImagePersistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
