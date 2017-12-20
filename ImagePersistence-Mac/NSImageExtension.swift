@@ -33,8 +33,7 @@ extension NSImage {
     func imagePNGRepresentation() -> NSData? {
         if let imageTiffData = self.tiffRepresentation, let imageRep = NSBitmapImageRep(data: imageTiffData) {
             // let imageProps = [NSImageInterlaced: NSNumber(value: true)] // PNG
-            let imageProps: [String: Any] = [:]
-            let imageData = imageRep.representation(using: NSBitmapImageFileType.PNG, properties: imageProps) as NSData?
+            let imageData = imageRep.representation(using: NSBitmapImageRep.FileType.png, properties: [:]) as NSData?
             return imageData
         }
         return nil
@@ -42,8 +41,8 @@ extension NSImage {
     
     func imageJPEGRepresentation(quality: CGFloat) -> NSData? {
         if let imageTiffData = self.tiffRepresentation, let imageRep = NSBitmapImageRep(data: imageTiffData) {
-            let imageProps = [NSImageCompressionFactor: quality]
-            let imageData = imageRep.representation(using: NSBitmapImageFileType.JPEG, properties: imageProps) as NSData?
+            let imageProps = [NSBitmapImageRep.PropertyKey.compressionFactor: quality]
+            let imageData = imageRep.representation(using: NSBitmapImageRep.FileType.jpeg, properties: imageProps) as NSData?
             return imageData
         }
         return nil
