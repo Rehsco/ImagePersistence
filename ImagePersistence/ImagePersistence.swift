@@ -62,11 +62,11 @@ open class ImagePersistence: ImagePersistenceInterface {
     }
 
     open func imageAsJPEG(_ image: UIImage, quality: CGFloat) -> Data {
-        return UIImageJPEGRepresentation(image, quality)!
+        return image.jpegData(compressionQuality: quality)!
     }
     
     open func imageAsPNG(_ image: UIImage) -> Data {
-        return UIImagePNGRepresentation(image)!
+        return image.pngData()!
     }
     
     open func imageFromData(_ data: Data) -> UIImage? {
