@@ -32,7 +32,7 @@ import UIKit
 open class ImagePersistence: ImagePersistenceInterface {
     private let fileManager = FileManager.default
     private let directoryURL: URL
-    open static var storageID = "ipimages"
+    public static var storageID = "ipimages"
 
     open var imageCache = ImageCache()
     
