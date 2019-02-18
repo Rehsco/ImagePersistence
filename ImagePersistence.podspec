@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ImagePersistence"
-  s.version          = "2.1.2"
+  s.version          = "2.2"
   s.license          = 'MIT'
   s.summary          = "Image Assets cache and storage"
   s.author           = { "Martin Jacob Rehder" => "rehscopods_01@rehsco.com" }
@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.ios.source_files   = 'ImagePersistence/*.swift'
-  s.osx.source_files   = 'ImagePersistence-Mac/*.swift'
+  s.ios.source_files   = 'ImagePersistence/**/*.swift'
+  s.osx.source_files   = 'ImagePersistence-Mac/**/*.swift'
 
 #  s.dependency ''
 end

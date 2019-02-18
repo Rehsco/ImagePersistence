@@ -32,15 +32,16 @@ import UIKit
 open class ImagePersistence: ImagePersistenceInterface {
     private let fileManager = FileManager.default
     private let directoryURL: URL
-    public static var storageID = "ipimages"
+    private let storageID: String
 
     open var imageCache = ImageCache()
     
-    public init?() {
+    public init?(storageID: String = "ipimages") {
+        self.storageID = storageID
         let possibleDirectories = fileManager.urls(for: .documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask)
         if possibleDirectories.count > 0 {
             let documentDirectory = possibleDirectories[0]
-            let directoryURL = documentDirectory.appendingPathComponent(ImagePersistence.storageID)
+            let directoryURL = documentDirectory.appendingPathComponent(storageID)
             self.directoryURL = directoryURL
             let path = self.directoryURL.path
             if !fileManager.fileExists(atPath: path) {
