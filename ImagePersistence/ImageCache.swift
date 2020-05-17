@@ -78,7 +78,7 @@ open class ImageCache {
     }
 
     open func removeImage(id: String) {
-        if let idx = self.imageIDList.index(of: id) {
+        if let idx = self.imageIDList.firstIndex(of: id) {
             self.imageIDList.remove(at: idx)
             self.imageCache.removeValue(forKey: id)
         }
